@@ -90,3 +90,16 @@ Git is a version control system (VCS) used to record the completely history of a
 | `git add` | Stages the changes to the chosen files, preparing them for commitment.<br>**Use cases:** <ul><li>`git add .` will stage the changes to all files in the repo.</li><li>`git add index.html` will stage the changes to only index.html.</li></ul> |
 | `git commit` | Commits the staged changes, recording the details of any changes to the files, and saving this to the log of changes. A message (required) must be added using `-m "message goes here"`.<br>**Use cases:** <ul><li>`git commit -m "adds index.html"` will commit the changes, with the message. After committing, the repo is once again considered as unmodified, and so the following commit will include all the changes since this commit.</li></ul> |
 | `git log` | Provides a history of all commits in the directory. Exit the log with `q`. |
+<br>
+
+### Rolling Back to Previous Versions using Git
+`git revert "7-digit ID"`
+- This undoes any of the changes that were committed in the chosen commit.
+        - The "7-digit ID" refers to the first 7 digits of the commit ID, which can be found in the log using `git log`.
+    - If any changes that were committed after the selected commit include dependencies on the changes being undone, those dependencies will be broken and such that code may no longer work.
+    - After using `revert`, a Vim editor will open: exitting this by typing it `:q` then `return` will ensure the revert is confirmed
+    - It will show as a commit in the log.
+
+`git reset "7-digit ID"`
+- This undoes all changes that were committed **since** the chosen commit
+    - This means all commits that were committed after the selected one are also undone.
