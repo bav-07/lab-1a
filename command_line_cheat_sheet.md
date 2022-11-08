@@ -51,4 +51,8 @@ Follow these rules for naming new files/folders:
 | `mv` | Used to **move** and/or **rename** a file. | `mv photo.png ..`<ul><li>moves photo.png into its parent directory.</li></ul>`mv photo.png new_directory`<ul><li>moves photo.png into new_directory. This can be used when new_directory is a child of the currently situated directory.</li></ul>`mv photo.png picture.png`<ul><li>**renames** photo.png into picture.png</li></ul>`mv photo.png ../picture.png`<ul><li>moves photo.png into its parent directory *and* renames it to picture.png.</li></ul>|
 | `cp` | Used to **copy** files/folders. The flag `-r` is added for copying directories. | `cp facts.txt new_directory`<ul><li>copies facts.txt into new_directory, a folder which must be a child of the current directory.</li></ul>`cp photo.png Photos/picture.png`<ul><li>moves photo.png into Photos *and* renames it to picture.png simultaneously. The current folder must be a parent of Photos.</li></ul>`cp facts.txt ../features.txt` <ul><li> moves facts.txt into its parent directory *and* renames it to features.txt.</li></ul> </ul> |
 
+### Deleting Files and Folders
+
+Tread carefully: any files deleted using the command-line are deleted permanently. There is no recovering them (unless you go to a data recovery specialist). Be *especially* careful not to delete critical files, or else you could brick your device.
+
 ## Git
