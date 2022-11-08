@@ -1,5 +1,4 @@
 # Ignore log and database files
-
 *.log
 *.sql
 *.sqlite
@@ -15,3 +14,17 @@ temp/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Ignore VSCode files
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Ignore local history for VSCode
+.history/
+
+# Ignore Ionide working folder
+.ionide/
