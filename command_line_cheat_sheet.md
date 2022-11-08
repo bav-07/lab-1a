@@ -129,3 +129,24 @@ Follow these steps to upload your local repository to GitHub.
     This command can also be used to update the remote repository with the local changes
 
 If you view the repository in GitHub, you should see your files, along with the commit history of your repository.
+
+<br>
+
+### Cloning a Repository from GitHub
+
+Follow these steps to clone a repository into your local files, allowing you to access these files locally.
+
+1. Copy the repository url by clicking on the green Code button as shown below, ensuring you have selected the SSH tab:<br>
+![github_clone](github_clone.png)
+2. Navigate to the desired parent folder in your terminal
+    > Be careful not to clone a repository inside another repository!
+3. Use the following command in your terminal
+    ```
+    git clone repository/url/here
+    ```
+    Replace `repository/url/here` with the SSH url you copied in Step 1.
+
+You can then use the following command to ensure your local repository is up-to-date, by downloading any changes that were committed since you cloned the repository:
+```
+git pull origin main
+```
