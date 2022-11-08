@@ -22,6 +22,8 @@ This cheat sheet provides a summary of command-line commands that can be used in
 
 Follow these rules for naming new files/folders:
 
+<!--Markdown does not care about the number of the list item, it still lists it with the right numbering anyway!-->
+1. Do not give it the same name as its parent directory.
 1. Do not use / or . in file names.
     - Also, avoid using \ as it is a separator character in Windows
 1. Avoid using spaces/whitespace: use underscores (_) instead, or capitalise letters - follow one of the following conventions to keep professionality:
