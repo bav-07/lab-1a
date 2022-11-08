@@ -20,4 +20,12 @@ This cheat sheet provides a summary of command-line commands that can be used in
 
 ### Creating Files and Folders
 
+Follow these rules for naming new files/folders:
+
+1. Do not use / or . in file names.
+    - Also, avoid using \ as it is a separator character in Windows
+1. Avoid using spaces/whitespace: use underscores (_) instead, or capitalise letters - follow one of the following conventions to keep professionality:
+    - `snake_case` - this is where spaces are replaced by underscores, and is the most popular file naming convention.
+    - `camelCase` - this is where spaces are eliminated by capitalising the following letter.
+
 ## Git
