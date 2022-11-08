@@ -81,7 +81,12 @@ Git is a version control system (VCS) used to record the completely history of a
 
 <br>
 
-| Command | Description | Use Cases |
-| ------- | --------------------- | ---- |
-| `git init` | Used to initialise a git repository in the current directory, allowing the computer to track changes to files within the repo. An initialised repo can be identified with `git:(main)` after the repo name: <br> ![command-line-git-initialised](initialised_git_repo.png) |  |
-|
+### Adding and Committing using Git  
+
+| Command | Description |
+| ------- | --------------------- | 
+| `git init` | Used to initialise a git repository in the current directory, allowing the computer to track changes to files within the repo. An initialised repo can be identified with `git:(main)` after the repo name: <br> ![command-line-git-initialised](initialised_git_repo.png) |
+| `git status` | Provides status on the repo, revealing any modified files, or untracked files.
+| `git add` | Stages the changes to the chosen files, preparing them for commitment.<br>**Use cases:** <ul><li>`git add .` will stage the changes to all files in the repo.</li><li>`git add index.html` will stage the changes to only index.html.</li></ul> |
+| `git commit` | Commits the staged changes, recording the details of any changes to the files, and saving this to the log of changes. A message (required) must be added using `-m "message goes here"`.<br>**Use cases:** <ul><li>`git commit -m "adds index.html"` will commit the changes, with the message. After committing, the repo is once again considered as unmodified, and so the following commit will include all the changes since this commit.</li></ul> |
+| `git log` | Provides a history of all commits in the directory. Exit the log with `q`. |
