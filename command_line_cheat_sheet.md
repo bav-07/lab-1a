@@ -80,3 +80,8 @@ Here are some handy tricks that could result in more efficient terminal use.
 Git is a version control system (VCS) used to record the completely history of a project. It is installed locally, enabling users to log changes without needing to be connected to the server. Git allows users to roll back their code to previously logged versions. Git repositories can be hosted on GitHub, which allows code to be shared with others - this makes collaboration between team members working on the same software vastly more accessible.
 
 <br>
+
+| Command | Description | Use Cases |
+| ------- | --------------------- | ---- |
+| `git init` | Used to initialise a git repository in the current directory, allowing the computer to track changes to files within the repo. An initialised repo can be identified with `git:(main)` after the repo name: <br> ![command-line-git-initialised](initialised_git_repo.png) |  |
+|
