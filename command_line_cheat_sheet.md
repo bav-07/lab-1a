@@ -53,6 +53,13 @@ Follow these rules for naming new files/folders:
 
 ### Deleting Files and Folders
 
-Tread carefully: any files deleted using the command-line are deleted permanently. There is no recovering them (unless you go to a data recovery specialist). Be *especially* careful not to delete critical files, or else you could brick your device.
+Tread carefully: any files deleted using the command-line are deleted permanently. There is no recovering them (unless you go to a data recovery specialist).
 
+Be *especially* careful not to delete critical files, or else you could brick your device - but the command-line should warn you if you are about to delete a critical file (as long as you don't use the `-f` flag).
+
+| Command | Description | Use Cases |
+| ------- | --------------------- | ---- |
+| `rm` | Used to **delete** files. | `rm facts.txt` - deletes facts.txt |
+| `rm -r` | Used to delete directories. Will warn the user if an important file is enocuntered. | `rm -r new_directory` - deletes new_directory. |
+| `rm -rf` | `-f` stands for "forced". It bypasses all security measures to recursively delete everything within the chosen directory, without asking the user for any confirmation. This should not be used ***only*** use when in the presence of a supervisor. | `rm -rf new_directory` - deletes directory whilst bypassing all security measures. |
 ## Git
