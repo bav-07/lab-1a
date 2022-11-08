@@ -28,4 +28,9 @@ Follow these rules for naming new files/folders:
     - `snake_case` - this is where spaces are replaced by underscores, and is the most popular file naming convention.
     - `camelCase` - this is where spaces are eliminated by capitalising the following letter.
 
+| Command | Description |
+| ------- | --------------------- |
+| `mkdir` | Short for "**m**ake **d**irectory". Creates a new directory within the current directory.<br>**Use cases:**<ul><li>`mkdir new_directory` makes a new directory called new_directory within the currently situated directory.</li><li>`mkdir Documents/new_directory` makes a new directory within the Documents directory, and can be used from within the parent directory of Documents.</li></ul>|
+| `touch` | Used to create a file within the currently situated directory.<br>**Use cases:**<ul><li>`touch facts.txt` creates a file called facts.txt within the current directory. Remember to give each file name an extension, unless you want to leave the file type as undefined.</li></ul>
+
 ## Git
