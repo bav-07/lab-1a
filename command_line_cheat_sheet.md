@@ -3,7 +3,7 @@ This cheat sheet provides a summary of command-line commands that can be used in
 
 <br>
 
-## Terminal
+## **Terminal**
 
 ### Navigation Commands
 
@@ -73,4 +73,7 @@ Here are some handy tricks that could result in more efficient terminal use.
     - The terminal does this by putting enough whitespace between your last 2 commands, such that only the last line in your terminal is left as visible in window.
 
 
-## Git
+## **Git**
+<img width="200px" align="right" src="https://upload.wikimedia.org/wikipedia/commons/6/62/Git-logo-orange.svg">
+Git is a version control system (VCS) used to record the completely history of a project. It is installed locally, enabling users to log changes without needing to be connected to the server. Git allows users to roll back their code to previously logged versions. Git repositories can be hosted on GitHub, which allows code to be shared with others - this makes collaboration between team members working on the same software vastly more accessible.
+
