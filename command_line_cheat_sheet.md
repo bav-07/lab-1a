@@ -62,4 +62,15 @@ Be *especially* careful not to delete critical files, or else you could brick yo
 | `rm` | Used to **delete** files. | `rm facts.txt` - deletes facts.txt |
 | `rm -r` | Used to delete directories. Will warn the user if an important file is enocuntered. | `rm -r new_directory` - deletes new_directory. |
 | `rm -rf` | `-f` stands for "forced". It bypasses all security measures to recursively delete everything within the chosen directory, without asking the user for any confirmation. This should not be used ***only*** use when in the presence of a supervisor. | `rm -rf new_directory` - deletes directory whilst bypassing all security measures. |
+
+### More Terminal Tricks
+Here are some handy tricks that could result in more efficient terminal use. 
+- Use `history` to see the last 10000 commands used in the terminal.
+- Use the `up` and `down` arrows to find previously used commands.
+    - This is especially useful when having to repeat commands.
+- Use `ctrl` + `c` to end a process in the terminal
+- Use `ctrl` + `l` or `clear` to clean up the terminal window
+    - The terminal does this by putting enough whitespace between your last 2 commands, such that only the last line in your terminal is left as visible in window.
+
+
 ## Git
