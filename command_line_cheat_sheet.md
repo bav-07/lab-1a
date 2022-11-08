@@ -103,3 +103,29 @@ Git is a version control system (VCS) used to record the completely history of a
 `git reset "7-digit ID"`
 - This undoes all changes that were committed **since** the chosen commit
     - This means all commits that were committed after the selected one are also undone.
+
+<br>
+
+### Uploading Code to GitHub
+Before doing this, ensure you have added an SSH key corresponding to your current device. You can use the instructions [here](https://github.com/BrightNetworkTechAcademy/c7_coursenotes/blob/main/laptop_setup_reset/adding_SSHkey_GitHub.md) to do so.
+
+Follow these steps to upload your local repository to GitHub.
+
+1. Create a remote repository on GitHub
+2. Copy the SSH url from GitHub, as shown here:<br>
+![image](github_ssh.png)
+3. Use the following command to link the local repository with the remote repository on GitHub:
+    <br>
+    ```
+    git remote add origin your/url/here
+    ```
+    Replace `your/url/here` with your SSH url from Step 2.
+    <br><br>
+4. Use the following command to push the local repository to the remote repository:
+    <br>
+    ```
+    git push origin main
+    ```
+    This command can also be used to update the remote repository with the local changes
+
+If you view the repository in GitHub, you should see your files, along with the commit history of your repository.
