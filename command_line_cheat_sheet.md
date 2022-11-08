@@ -74,6 +74,7 @@ Here are some handy tricks that could result in more efficient terminal use.
 
 
 ## **Git**
-<img width="200px" align="right" src="https://upload.wikimedia.org/wikipedia/commons/6/62/Git-logo-orange.svg">
+<img width="200px" alt="git logo" align="right" src="https://upload.wikimedia.org/wikipedia/commons/6/62/Git-logo-orange.svg">
 Git is a version control system (VCS) used to record the completely history of a project. It is installed locally, enabling users to log changes without needing to be connected to the server. Git allows users to roll back their code to previously logged versions. Git repositories can be hosted on GitHub, which allows code to be shared with others - this makes collaboration between team members working on the same software vastly more accessible.
 
+<br>
