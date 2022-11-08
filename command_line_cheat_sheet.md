@@ -37,12 +37,18 @@ Follow these rules for naming new files/folders:
 
 <br>
 
-### Opening files
+### Opening Files and Folders
 | Command | Description |
 | ------- | --------------------- |
 | `open` | Used to open files/directories, using the default program.<br>**Use cases:**<ul><li>`open facts.txt` will open the text file using a text editor.</li><li>`open Documents` will open Documents using the Finder (on Mac). This can be used whilst within the parent directory of Documents.</li><li>`open .` opens the directory you are currently in.</li><li>`open ..` opens the parent directory to the one you are currently in.</li><li>`open Documents/new_directory` opens the new_directory folder within Documents, and can be used when in the parent directory of Documents, i.e. the full path must be provided for any file/folder that is not within the currently situated directory.</li></ul> |
 | `code` | Used to open the file/directory in VSCode (Visual Studio Code).<br>**Use cases:**<ul><li>`code .` opens the currently situated directory in VS Code.</li><li>`code facts.txt` opens the text file in VS Code.</li></ul>
 
 <br>
+
+### Manipulating Files and Folders
+| Command | Description | Use Cases |
+| ------- | --------------------- | ---- |
+| `mv` | Used to **move** and/or **rename** a file. | `mv photo.png ..`<ul><li>moves photo.png into its parent directory.</li></ul>`mv photo.png new_directory`<ul><li>moves photo.png into new_directory. This can be used when new_directory is a child of the currently situated directory.</li></ul>`mv photo.png picture.png`<ul><li>**renames** photo.png into picture.png</li></ul>`mv photo.png ../picture.png`<ul><li>moves photo.png into its parent directory *and* renames it to picture.png.</li></ul>|
+| `cp` | Used to **copy** files and folders. Use the flag `-r` to copy an entire directory, by **r**ecurisvely going through the whole directory | `cp facts.txt new_directory`<ul><li>copies facts.txt into new_directory, a folder which must be a child of the current directory.</li></ul>`cp photo.png new_directory/picture.png`<ul><li>moves photo.png into new_directory *and* renames it to picture.png simultaneously. The current folder must be a parent of new_directory.</li></ul>`cp facts.txt ../features.txt` <ul><li> moves facts.txt into its parent directory *and* renames it to features.txt.</li></ul> </ul> |
 
 ## Git
