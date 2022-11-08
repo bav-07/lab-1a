@@ -132,7 +132,9 @@ Follow these steps to clone a repository into your local files, allowing you to 
 
 1. Copy the repository url by clicking on the green Code button as shown below, ensuring you have selected the SSH tab:<br>
 <img width="300px" src="github_clone.png">
+
 2. Navigate to the desired parent folder in your terminal. Be careful not to clone a repository inside another repository!
+
 3. Use the following command in your terminal
     ```
     git clone repository/url/here
