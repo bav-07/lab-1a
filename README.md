@@ -81,7 +81,7 @@ Git is a version control system (VCS) used to record the completely history of a
 | ------- | --------------------- | 
 | `git init` | Used to initialise a git repository in the current directory, allowing the computer to track changes to files within the repo. An initialised repo can be identified with `git:(main)` after the repo name: <br> ![command-line-git-initialised](initialised_git_repo.png) |
 | `git status` | Provides status on the repo, revealing any modified files, or untracked files.
-| `git add` | Stages the changes to the chosen files, preparing them for commitment.<br>**Use cases:** <ul><li>`git add .` will stage the changes to all files in the repo.</li><li>`git add index.html` will stage the changes to only index.html.</li></ul> |
+| `git add` | Stages the changes to the chosen files, preparing them for commitment.<br>**Use cases:** <ul><li>`git add .` will stage the changes to all files in the repo.</li><li>`git add index.html` will stage the changes to only index.html.</li><li>`git add --all` will stage the changes to all files within the git repository - this reaches up to the highest level (seeks the highest level parent directory of the current folder that is still within the git repo).</li></ul> |
 | `git commit` | Commits the staged changes, recording the details of any changes to the files, and saving this to the log of changes. A message (required) must be added using `-m "message goes here"`.<br>**Use cases:** <ul><li>`git commit -m "adds index.html"` will commit the changes, with the message. After committing, the repo is once again considered as unmodified, and so the following commit will include all the changes since this commit.</li></ul> |
 | `git log` | Provides a history of all commits in the directory. Exit the log with `q`. |
 <br>
@@ -131,7 +131,7 @@ If you view the repository in GitHub, you should see your files, along with the 
 Follow these steps to clone a repository into your local files, allowing you to access these files locally.
 
 1. Copy the repository url by clicking on the green Code button as shown below, ensuring you have selected the SSH tab:<br>
-<img width="300px" src="github_clone.png">
+    <img width="300px" src="github_clone.png">
 
 2. Navigate to the desired parent folder in your terminal. Be careful not to clone a repository inside another repository!
 
