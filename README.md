@@ -81,9 +81,10 @@ Git is a version control system (VCS) used to record the completely history of a
 | ------- | --------------------- | 
 | `git init` | Used to initialise a git repository in the current directory, allowing the computer to track changes to files within the repo. An initialised repo can be identified with `git:(main)` after the repo name: <br> ![command-line-git-initialised](initialised_git_repo.png) |
 | `git status` | Provides status on the repo, revealing any modified files, or untracked files.
-| `git add` | Stages the changes to the chosen files, preparing them for commitment.<br>**Use cases:** <ul><li>`git add .` will stage the changes to all files in the repo.</li><li>`git add index.html` will stage the changes to only index.html.</li><li>`git add --all` will stage the changes to all files within the git repository - this reaches up to the highest level (seeks the highest level parent directory of the current folder that is still within the git repo).</li></ul> |
+| `git add` | Stages the changes to the chosen files, preparing them for commitment.<br>**Use cases:** <ul><li>`git add .` will stage the changes to all files in the repo.</li><li>`git add index.html` will stage the changes to only index.html.</li><li>`git add --all`, also `gaa` will stage the changes to all files within the git repository - this reaches up to the highest level (seeks the highest level parent directory of the current folder that is still within the git repo).</li></ul> |
 | `git commit` | Commits the staged changes, recording the details of any changes to the files, and saving this to the log of changes. A message (required) must be added using `-m "message goes here"`.<br>**Use cases:** <ul><li>`git commit -m "adds index.html"` will commit the changes, with the message. After committing, the repo is once again considered as unmodified, and so the following commit will include all the changes since this commit.</li></ul> |
 | `git log` | Provides a history of all commits in the directory. Exit the log with `q`. |
+| `git squash` | "Squashes" lots of commits together into one: you lose the history but you also lose the clutter. |
 <br>
 
 ### Rolling Back to Previous Versions using Git
@@ -121,6 +122,8 @@ Follow these steps to upload your local repository to GitHub.
     git push origin main
     ```
     This command can also be used to update the remote repository with the local changes
+
+Using `git push origin main -u` makes the main the default upstream branch to push to. This will allow you to just use `git push` to upload to the remote repository from here on out.
 
 If you view the repository in GitHub, you should see your files, along with the commit history of your repository.
 
